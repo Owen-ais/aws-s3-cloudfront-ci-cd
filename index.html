@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS CI/CD Static Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #232f3e;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #ff9900;
+            color: #232f3e;
+            font-weight: bold;
+            padding: 6px 10px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            color: #555;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .footer {
+            margin-top: 30px;
+            border-top: 1px solid #ddd;
+            padding-top: 15px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AWS S3 + CloudFront CI/CD Pipeline</h1>
+        <div class="tag">GitHub Actions Deployment</div>
+
+        <p><span class="highlight">Name:</span> Owen Thomson</p>
+        <p><span class="highlight">Project:</span> Automated Static Website Deployment</p>
+        <p><span class="highlight">Deployed with:</span> GitHub Actions, Amazon S3, and CloudFront</p>
+
+        <h2>About This Project</h2>
+        <p>
+            This website is automatically deployed to Amazon S3 using GitHub Actions.
+            After deployment, CloudFront is invalidated so the latest version is served through the CDN.
+        </p>
+
+        <h2>What This Shows</h2>
+        <ul>
+            <li>Using GitHub Actions for CI/CD</li>
+            <li>Uploading website files to Amazon S3 automatically</li>
+            <li>Invalidating CloudFront cache after deployment</li>
+            <li>Using AWS IAM permissions for deployment automation</li>
+            <li>Building a real-world static website deployment workflow</li>
+        </ul>
+
+        <div class="footer">
+            Built as part of my Cloud Engineering learning journey 🚀
+        </div>
+    </div>
+</body>
+</html>
