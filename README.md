@@ -69,3 +69,90 @@ The workflow is stored in:
 
 ```text
 .github/workflows/deploy.yml
+```
+
+The workflow performs the following actions:
+
+1. Checks out the GitHub repository
+2. Configures AWS credentials using IAM role access
+3. Syncs website files to the S3 bucket
+4. Invalidates the CloudFront cache
+
+---
+
+## Screenshots
+
+### GitHub Actions Successful Deployment
+
+<img src="Screenshots/github-actions-success.png" width="700">
+
+---
+
+### S3 Deployed Website Files
+
+<img src="Screenshots/s3-deployed-files.png" width="700">
+
+---
+
+### CloudFront Distribution
+
+<img src="Screenshots/cloudfront-distribution.png" width="700">
+
+---
+
+### CloudFront Invalidation
+
+<img src="Screenshots/cloudfront-invalidation.png" width="700">
+
+---
+
+### Live CloudFront Website
+
+<img src="Screenshots/cloudfront-website-live.png" width="700">
+
+---
+
+## Project Files
+
+```text
+aws-s3-cloudfront-ci-cd/
+├── README.md
+├── index.html
+├── .github/
+│   └── workflows/
+│       └── deploy.yml
+└── Screenshots/
+    ├── github-actions-success.png
+    ├── s3-deployed-files.png
+    ├── cloudfront-distribution.png
+    ├── cloudfront-invalidation.png
+    └── cloudfront-website-live.png
+```
+
+---
+
+## What I Learned
+
+- How to automate static website deployments using GitHub Actions
+- How to upload files to Amazon S3 using a CI/CD pipeline
+- How CloudFront caching works
+- How to invalidate CloudFront cache after website updates
+- How to use IAM permissions for deployment automation
+- How to structure a simple real-world deployment workflow
+- Why automation is useful for repeatable cloud deployments
+
+---
+
+## Why This Project Matters
+
+This project demonstrates important cloud engineering skills including deployment automation, object storage, CDN delivery, IAM access control, and CI/CD workflows.
+
+These are common skills used when deploying static websites, documentation pages, landing pages, and frontend applications in AWS.
+
+---
+
+## Status
+
+Project completed successfully.
+
+The website was deployed automatically using GitHub Actions, uploaded to Amazon S3, and served through Amazon CloudFront.
